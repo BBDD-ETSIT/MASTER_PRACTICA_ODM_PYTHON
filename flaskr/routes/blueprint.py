@@ -79,7 +79,7 @@ def route_delete_patient(hospital_id,patient_id):
 
 @blueprint.route('/hospitals/<hospital_id>/patients/<patient_id>/assign_doctor/assigned', methods=['GET','POST','PUT'])
 def route_assign_doctor(hospital_id,patient_id):
-	doctor_id = body.form['doctor']
+	doctor_id = request.form['doctor']
 	patient=assign_doctor(patient_id,doctor_id)
 	return render_template("show.html",hospital=hospital_id, patient= patient)
 
