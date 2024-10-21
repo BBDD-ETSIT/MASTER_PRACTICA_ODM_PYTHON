@@ -208,6 +208,17 @@ id = uuid.uuid4()
 ```
 **Returns:** El objeto paciente creado
 
+### create_edited_patient(patient_id)
+
+**Descripción:** Obtiene los datos del paciente identificado por patient_id  que ha sido ingresado en el formulario de actualización.
+
+**Parametros:**
+
+- patient_id - Id del paciente
+
+
+**Returns:** El objeto paciente 
+
 ### update_patient(patient_id, body)
 
 **Descripción:** Actualiza los datos del paciente identificado por patient_id
